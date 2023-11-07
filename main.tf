@@ -13,12 +13,10 @@ provider "random" {
 
 variable "min" {
   type    = number
-  default = 1
 }
 
 variable "max" {
   type    = number
-  default = 100
 }
 
 resource "random_integer" "priority" {
