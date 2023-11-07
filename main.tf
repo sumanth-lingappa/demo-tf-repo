@@ -13,7 +13,7 @@ provider "random" {
 
 variable "min" {
   type    = number
-  default = 1
+  default = 10
 }
 
 variable "max" {
