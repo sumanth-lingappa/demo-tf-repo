@@ -19,11 +19,20 @@ variable "max" {
   type    = number
 }
 
-resource "random_integer" "priority" {
+resource "random_integer" "priority1" {
   min = var.min
   max = var.max
 }
 
 output "random_integer" {
-  value = random_integer.priority.result
+  value = random_integer.priority1.result
+}
+
+resource "random_integer" "priority2" {
+  min = var.min
+  max = var.max
+}
+
+output "random_integer2" {
+  value = random_integer.priority2.result
 }
